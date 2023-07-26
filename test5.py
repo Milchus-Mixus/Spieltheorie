@@ -34,7 +34,7 @@ class simpleapp_tk(tkinter.Tk):
     def OnButtonEinsClick(self):
         global Bild
 
-        Bild = tkinter.PhotoImage(file = "w2.gif")
+        Bild = tkinter.PhotoImage(file = "14.png")
         self.labelEins.configure(image = Bild)
 
 
