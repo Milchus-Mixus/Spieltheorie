@@ -21,10 +21,28 @@ class simpleapp_tk(tkinter.Tk):
 
         
         #Label erstellen mit festem Platz als xy-Koordinate und fester Höhe und Breite
+<<<<<<< Updated upstream
         Bild = tkinter.PhotoImage(file = self.cards[0])
         self.card1 = tkinter.Label(self,image = Bild)
         self.card1.place(x=0, y=0)
         print(self.cards[0])
+=======
+        Bild = tkinter.PhotoImage(file = "9_of_diamonds.png")
+        self.labelEins = tkinter.Label(self,image = Bild)
+        self.labelEins.place(x=85, y=75, width=30, height=30)
+
+
+
+
+# bei Klick auf den Knopf ...
+    def OnButtonEinsClick(self):
+        global Bild
+
+        Bild = tkinter.PhotoImage(file = "9_of_diamonds.png")
+        self.labelEins.configure(image = Bild)
+
+
+>>>>>>> Stashed changes
 
 
   
