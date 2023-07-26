@@ -13,27 +13,33 @@ class simpleapp_tk(tkinter.Tk):
         
     def initialize(self):
         global Bild
-        Hand = [(2, 0), (3, 1), (1, 4)]
-        self.cards = [] 
-        for card in Hand:
-                self.cards.append(f'{card[0]}{card[1]}.png') 
-                print(card)
 
+        # frame erstellen, mit fester Höhe und Breite
+        
+
+        #Knopf erstellen mit festem Platz als xy-Koordinate und fester Höhe und Breite
+ 
         
         #Label erstellen mit festem Platz als xy-Koordinate und fester Höhe und Breite
-        Bild1 = tkinter.PhotoImage(file = self.cards[0])
-        self.card1 = tkinter.Label(self,image = Bild1)
-        self.card1.place(x=0, y=0)
-        print(self.cards[0])
+        Bild = tkinter.PhotoImage(file = "9_of_diamonds.png")
+        self.labelEins = tkinter.Label(self,image = Bild)
+        self.labelEins.place(x=85, y=85)
+
+
+
 
 # bei Klick auf den Knopf ...
     def OnButtonEinsClick(self):
         global Bild
 
-        Bild = tkinter.PhotoImage(file = self.cards[0])
-        self.card1.configure(image = Bild)
+        Bild = tkinter.PhotoImage(file = "9_of_diamonds.png")
+        self.labelEins.configure(image = Bild)
+
+
+
+
 
 if __name__ == "__main__":
     app = simpleapp_tk(None)
-    app.title('Schwimmen')
+    app.title('Das Fenster')
     app.mainloop()     
