@@ -28,7 +28,7 @@ class simpleapp_tk(tkinter.Tk):
         #Hand = [(2, 0), (3, 1), (1, 4)]
         self.cards = [] 
         for card in Hand:
-                self.cards.append(f'PNG-cards-1.3\\{card[0]}{card[1]}.png') 
+                self.cards.append(f'PNG-cards-1.3\\{card[0]}{card[1]} png.png') 
                 print(card)
         Player = 0
         for Position in range (0, 11):
