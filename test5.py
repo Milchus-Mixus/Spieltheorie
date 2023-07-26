@@ -12,7 +12,7 @@ CorY=[30, 30, 30, 20, 20, 20, 10, 10, 10, 10, 10, 10]
 Hand = [(1, 2), (1, 0), (0, 2), (3, 5), (3, 3), (1, 4), (2, 4), (0, 3), (2, 1), (0, 0), (1, 1), (1, 5)]
 
 for k in range (6,12):
-     Hand[k] = (4,8)
+     Hand[k] = (2,4)
 print(Hand)
 
 # bisheriger Aufbau mit Knopf, Fläche und Bild
@@ -28,7 +28,7 @@ class simpleapp_tk(tkinter.Tk):
         #Hand = [(2, 0), (3, 1), (1, 4)]
         self.cards = [] 
         for card in Hand:
-                self.cards.append(f'{card[0]}{card[1]}.png') 
+                self.cards.append(f'PNG-cards-1.3\\{card[0]}{card[1]}.png') 
                 print(card)
         Player = 0
         for Position in range (0, 11):
