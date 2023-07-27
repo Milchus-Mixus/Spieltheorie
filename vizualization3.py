@@ -38,7 +38,6 @@ def vizualzation(Hand):
                 Bild = tkinter.PhotoImage(file = self.cards[Position])
                 self.Position = tkinter.Label(self,image = Bild)
                 self.Position.photo=Bild
-                print("VICK")
                 self.Position.place(x=CorX[Position], y=CorY[Position])
                 #print(Position, CorX[Position], CorY[Position])
 
